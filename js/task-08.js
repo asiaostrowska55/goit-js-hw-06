@@ -10,6 +10,8 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("All fields needs to be filled!");
   }
-  console.log(`Email: ${email.value}\nPassword: ${password.value}`);
+  console.log(
+    `${email.name}: ${email.value}, ${password.name}: ${password.value}`
+  );
   form.reset();
 }
